@@ -1,0 +1,92 @@
+.schoolbell-regular {
+    font-family: "Schoolbell", cursive;
+    font-weight: 400;
+    font-style: normal;
+}   
+
+.happy-birthday {
+    justify-content: center;
+    text-align: center;
+}
+
+.big-font {
+    font-size: 250%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+.left-side {
+    justify-content: left;
+    text-align: left;
+}
+
+.right-side {
+    justify-content: right;
+    text-align: right;
+}
+
+
+.pre-song {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.pre-song button {
+    margin: 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: 0;
+}
+
+.song {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+#cat-img {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#cat-img.show {
+    opacity: 1;
+}
+
+#cat-img.slow-spin {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#mute-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 100;
+    border: 0;
+}
+
+.sundar-button {
+    padding: 10px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    border: 0;
+}

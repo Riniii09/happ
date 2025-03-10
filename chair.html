@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here's your gift</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="happy-birthday">
+        <video src="./kurchi_edit.mp4" height="300px" controls></video>
+    </div>
+    
+    <div class="happy-birthday">
+        <em>A kurchi edit...</em>
+    </div>
+    <div class="happy-birthday">
+        <h4 class="schoolbell-regular">I feel bad for making this joke, vent here :(</h4>
+    </div>
+    <div class="happy-birthday">
+        <textarea id="userInput" rows="4" cols="40" placeholder="Type your thoughts here..."></textarea>
+        <br>
+        <button id="submitBtn" class="sundar-button schoolbell-regular">Send</button>
+    
+    <p style="margin-top: 20px;" id="response"></p>
+    </div>
+
+    <script>
+        document.getElementById("submitBtn").addEventListener("click", function() {
+            const responseText = document.getElementById("response");
+
+            const sarcasticResponses = [
+                "Hold on, let me get my tiny violin. 🎻",
+                "Do not care 💋",
+                "GET OVER IT"
+            ];
+
+            const randomResponse = sarcasticResponses[Math.floor(Math.random() * sarcasticResponses.length)];
+            responseText.textContent = randomResponse;
+        });
+    </script>
+</body>
+</html>
